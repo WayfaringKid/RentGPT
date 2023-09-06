@@ -24,7 +24,7 @@ LLM chatbot for personalized rental lease consulting
 - **React**: For front-end development.
 - **CSS**: For styling the front-end components.
 - **Flask**: For the back-end logic.
-- **CrowdStrike**: For cybersecurity measures to ensure the integrity and confidentiality of user data.
+- **Cloudflare**: For cybersecurity measures to ensure the integrity and confidentiality of user data.
 
 ### Optional
 
@@ -41,7 +41,7 @@ LLM chatbot for personalized rental lease consulting
 
 ## Security Measures
 
-We place a high emphasis on security, especially given that we handle sensitive documents and data. The system will incorporate **CrowdStrike** to:
+We place a high emphasis on security, especially given that we handle sensitive documents and data. The system will incorporate **Cloudflare** to:
 
 - Monitor and protect against unauthorized access or cyber-attacks.
 - Provide real-time threat intelligence and response.
