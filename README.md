@@ -55,8 +55,4 @@ We place a high emphasis on security, especially given that we handle sensitive 
 
 ---
 
-For more information or to contribute to this project, please reach out to [Your Contact Information].
-
----
-
 *This is a proposal and is subject to changes. Your feedback is appreciated.*
