@@ -4,6 +4,8 @@ import os
 from dotenv import load_dotenv
 from flask_cors import CORS
 import random
+import PyPDF2
+import io
 
 load_dotenv()
 
@@ -39,6 +41,18 @@ def call_openai(text):
     ]
     # Return a random response
     return random.choice(mock_responses)
+
+@app.route('/upload-pdf', methods=['POST'])
+def upload_pdf():
+    file = request.files['file']
+    if file:
+        # Read and process the PDF file
+        pdfReader = PyPDF2.PdfFileReader(file)
+        content = ""
+        for page in range(pdfReader.numPages):
+            content += f"Page {page+1}\n" + pdfReader.getPage(page).extractText() + "\n"
+        return content  # Send back the extracted content
+    return "No file received", 400
 
 if __name__ == '__main__':
     app.run(debug=True)
